@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('Flower.jpg'); 
+    height: 100vh;
+    width: 100%;
+    background-size: cover;  
+    display:flex;
+    align-items: center; 
+} 
+
+.container:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('Nature_picture.jpeg'); 
+    background-size: cover;
+}
+
+.box1,.box2,.box3{
+    height: 50vh;
+    width: 50vh;
+    background-color: rgb(143, 197, 18); 
+    margin-top: 6vh;
+    margin-left: 15vh;
+    box-shadow: 5px 5px black;
+    border-radius: 20px;
+    border: 2px solid  black;
+    font-size:1em;
+}
+
+.box1:hover{
+    background-color:  darkblue;
+    color: white;
+    font-size:1.3em;
+}
+
+.box2:hover{
+     background-color:  darkblue;
+    color: white;
+    font-size:1.3em;
+}
+
+.box3:hover{
+    background-color:  darkblue;
+    color: white;
+    font-size:1.2em;
+}
+
+.aa,.bb,.cc{
+    height: 30vh;
+    width: 40vh;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-size: cover;
+}
+.aa{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("hpLaptop.webp");
+}
+
+.bb{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Headphone.webp");
+}
+
+.cc{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Phone_Picture.jpeg");
+}
+
+p{
+   
+    text-align: center;
+}
+i{
+    color: red;
+    font-size: large;
+}

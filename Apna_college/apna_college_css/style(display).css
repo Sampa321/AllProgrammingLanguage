@@ -1,0 +1,17 @@
+#div1{
+    background-color: aqua;
+    display:inline;
+    visibility: hidden;
+}
+#div2{
+    background-color:black;
+    display:none;
+}
+#div3{
+    background-color: #ff0011cb;
+    display:inline;
+}
+button{
+    background-color: rgba(0,0,255,0.4);
+    display: block;
+}

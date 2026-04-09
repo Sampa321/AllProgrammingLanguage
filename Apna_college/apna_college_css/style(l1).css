@@ -1,0 +1,40 @@
+*{                 /*universal selector */
+    color:red;
+}
+p{                      /*element selector*/
+    color: rgb(170, 28, 28);
+}
+#headingOne{
+    color: blueviolet;
+    text-decoration: underline;
+    font-weight: 1000;
+    line-height: 4px;
+}
+#headingTwo{
+    color:aqua;
+    text-decoration: overline;
+    font-weight: bold;
+    line-height: normal;
+}
+#headingThree{
+    color:darkgreen;
+    text-decoration: line-through;
+    font-weight: bolder;
+}
+#headingFour{
+    color:darkmagenta;
+    text-decoration:unset;
+    font-weight: lighter;
+}
+
+.myclass{
+    color: crimson;
+}
+
+/*h1{
+    text-align: center;
+}*/
+
+h3{
+    text-transform: none;
+}

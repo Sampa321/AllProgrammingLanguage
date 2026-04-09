@@ -1,0 +1,84 @@
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color:red;
+    border-radius: 50%;
+}
+
+#div2{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#div3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+} 
+
+/* *{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#navbar{
+    height: 60;
+    background-color: #f11112;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+    margin-left: 200px;
+}
+
+#logo{
+    margin-left: 2px;
+    font-size: 25px;
+    color: #f08802;
+}
+
+input{
+    margin-left: 200px;
+}
+
+button{
+    color:rgb(236, 242, 247);
+    background-color: #111111;
+}
+
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0,0,123,0.5);
+    border:2px solid blue;
+}
+#div2{
+    height: 100px;
+    width: 100px;
+    background-color:rgba(0,166,0,0.5);
+    border:2px solid #881211;
+}
+#div3{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(111,2,3,0.5);
+    border:2px solid navy;
+}
+
+footer{
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#contant{
+    height: 1000px;
+} */
+
+ 
+

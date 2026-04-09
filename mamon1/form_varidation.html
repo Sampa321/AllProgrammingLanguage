@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateform(){
+            var name=document.myform.name.value;
+
+            if(name==null||name==""){
+                alert("Name can't be blank");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="name">Name</label>
+    <input type="text" name="name"><br></br>
+    <label for="">Password</label>
+    <input type="Number" name="Password"><br></br>
+    <label for="">Phone Number</label>
+    <input type=" Number" name="Phone Number"><br></br>
+    <label for="">Date of Birth</label>
+    <input type="Date" name="Date of Birth"><br></br>
+    <label for="">Address</label>
+    <input type="text" name="Address"><br></br>
+    <label for="">State</label>
+    <input type="text" name="State"><br></br>
+    <label for="">City</label>
+    <input type="text" name="City"><br></br>
+    <label for="">Pin Code</label>
+    <input type="Number" name="Pin Code"><br></br>
+    <input type="submit" value="register">
+</body>
+</html>

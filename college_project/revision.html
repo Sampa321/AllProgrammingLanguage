@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {background-color: chartreuse;}
+    .count
+    {
+        text-align: center;
+        margin-top:150px;
+        background-color: rgb(65, 128, 7);
+        height:300px;
+        width: 400px;
+        margin-left:400px;
+        border-radius: 5px;
+        border:0.5px  solid;
+        box-shadow: 0px 0px 20px rgb(0, 255, 42); 
+    }
+    h1
+    {
+        margin-top:80px;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .incre 
+    {
+        background-color: blue;
+        color: white;
+        border: 1px solid black;
+        border-radius:10%;
+        padding: 10px 20px;
+        box-shadow: 0 0 10px blue;
+    }
+    .decre 
+    {
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: 1px solid black;
+        border-radius:10%;
+        padding: 10px 20px;
+        box-shadow: 0 0 10px red;
+    }
+    .reset
+    {
+        background-color: rgb(0, 255, 21);
+        color: rgb(184, 13, 13);
+        border: 1px solid black;
+        border-radius:10%;
+        padding: 10px 20px;
+        box-shadow: 0 0 10px green;
+    }
+</style>
+<body>
+    <div class="count">
+        <h1>counter:<span id="count">0</span></h1>
+        <div class="count-botton">
+            <button class="incre" onclick="increment()">Increment</button>
+            <button class="decre" onclick="decrement()">Decrement</button>
+            <button class="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let counter=0;
+    function increment()
+    {
+        counter++;
+        document.getElementById("count").innerHTML=counter;
+    }
+    function decrement()
+    {
+        counter--;
+        document.getElementById("count").innerHTML=counter;
+    }
+    function reset()
+    {
+        counter=0;
+        document.getElementById("count").innerHTML=counter;
+    }
+</script>

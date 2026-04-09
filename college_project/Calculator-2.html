@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        
+
+    }
+    .cal{
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 360px;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 2em;
+        
+        
+    }
+    .btns{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4,60px);
+        grid-row: auto;
+        
+        
+    }
+    button{
+        width: 40px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 2cap;
+
+    }
+    button:hover{
+        font-size: 1.4em;
+        background-color: gray;
+    }
+    #in{
+        height: 25px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 2cap;
+        background-color: white;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    .his{
+        height: auto;
+        width: 300px;
+        background-color: greenyellow;
+        margin-left: 20px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        border: 2px solid black;
+        border-radius: 2em;
+    }
+    .bd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+<body>
+    
+<center><font color="Violet"><h1><i><u>Calculator</u></i></h1> </font></center>
+   <div class="bd">
+    <div class="cal">
+        <br>
+        <input type="text" id="in"  placeholder="Try Calculator" disabled><br>
+        <div class="btns">
+            <button onclick="clr()">C</button>
+            <button onclick="inp('1')">1</button>
+            <button onclick="inp('2')">2</button>
+            <button onclick="inp('3')">3</button>
+            <button onclick="inp('/')">/</button>
+            <button onclick="inp('4')">4</button>
+            <button onclick="inp('5')">5</button>
+            <button onclick="inp('6')">6</button>
+            <button onclick="inp('*')">*</button>
+            <button onclick="inp('7')">7</button>
+            <button onclick="inp('8')">8</button>
+            <button onclick="inp('9')">9</button>
+            <button onclick="inp('+')">+</button>
+            <button onclick="inp('0')">0</button>
+            <button onclick="inp('-')">-</button>
+            <button onclick="sub()">=</button>
+            <button onclick="del()">del</button>
+           
+        </div>
+    </div>
+    <div class="his">
+        <center><h1><u>History</u></h1></center>
+        <div id="hv"></div>
+    </div>
+   </div>
+    
+    <script>
+        let h=0;
+        let last_arg='';
+        function clr(){
+            document.getElementById("in").value = "";
+            }
+        function inp(arg){
+            document.getElementById("in").value += arg;
+            last_arg=arg;
+        }
+        function sub(){
+            h++;
+            let dis=document.getElementById('in');
+            document.getElementById('hv').innerHTML+="<br>"+h+". "+dis.value
+            dis.value=eval(dis.value);
+            document.getElementById("hv").innerHTML += " = " + dis.value
+        }
+        function del()
+        {
+         let k= document.getElementById('in').value;
+         document.getElementById('in').value=k.slice(0,-last_arg.length);
+        }
+    </script>
+</body>
+</html>

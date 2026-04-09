@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ff8778;
+}
+
+#Birthday_Cake{
+    height:30px;
+    width:200px;
+    background-color: white;
+    border-radius:50%; 
+    position:relative;
+    top:70px;
+    left:10px;
+}
+.cake{
+    height:50px;
+    width:150px;
+    background-color:#db2a13;
+    position: relative;
+    bottom:40px;
+    left:25px;
+    border-radius:5px;
+} 
+
+.bottom{
+    height: 50px;
+    width: 100px;
+    background-color:chocolate;
+    position: relative;
+    bottom:50px;
+    left: 10spx;
+    border-radius:5px;
+}
+
+.middle{
+    height:120px;
+    width: 20px;
+    background-color:white;
+    position: relative;
+    bottom:150px;
+    
+}

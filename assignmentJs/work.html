@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Driven Program</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Menu</h2>
+        <label for="choice">Choose an option:</label>
+        <select id="choice">
+            <option value="0">Select an option</option>
+            <option value="1">Calculate Power</option>
+            <option value="2">Calculate Sin Value</option>
+            <option value="3">Calculate Square Root</option>
+            <option value="4">Exit</option>
+        </select>
+        <button onclick="executeChoice()">Submit</button>
+
+        <div id="inputFields"></div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function executeChoice() {
+            // Clear previous inputs and results
+            document.getElementById('inputFields').innerHTML = '';
+            document.getElementById('result').innerHTML = '';
+
+            // Get user's choice
+            const choice = document.getElementById('choice').value;
+
+            switch (choice) {
+                case '1':
+                    calculatePower();
+                    break;
+                case '2':
+                    calculateSin();
+                    break;
+                case '3':
+                    calculateSqrt();
+                    break;
+                case '4':
+                    exitProgram();
+                    break;
+                default:
+                    alert('Please select a valid option.');
+            }
+        }
+
+        function calculatePower() {
+            // Create input fields for base and exponent
+            const inputFields = `
+                <label for="base">Base:</label>
+                <input type="number" id="base">
+                <label for="exponent">Exponent:</label>
+                <input type="number" id="exponent">
+                <button onclick="showPowerResult()">Calculate</button>
+            `;
+            document.getElementById('inputFields').innerHTML = inputFields;
+        }
+
+        function showPowerResult() {
+            const base = document.getElementById('base').value;
+            const exponent = document.getElementById('exponent').value;
+            const result = Math.pow(base, exponent);
+            document.getElementById('result').innerText = Result:${base}^${exponent} = ${result};
+        }
+
+        function calculateSin() {
+            // Create input field for angle in degrees
+            const inputFields = `
+                <label for="angle">Angle (in degrees):</label>
+                <input type="number" id="angle">
+                <button onclick="showSinResult()">Calculate</button>
+            `;
+            document.getElementById('inputFields').innerHTML = inputFields;
+        }
+
+        function showSinResult() {
+            const angle = document.getElementById('angle').value;
+            const radians = (Math.PI / 180) * angle;
+            const result = Math.sin(radians);
+            document.getElementById('result').innerText = Result: sin(${angle}°) = ${result};
+        }
+
+        function calculateSqrt() {
+            // Create input field for the number
+            const inputFields = `
+                <label for="number">Number:</label>
+                <input type="number" id="number">
+                <button onclick="showSqrtResult()">Calculate</button>
+            `;
+            document.getElementById('inputFields').innerHTML = inputFields;
+        }
+
+        function showSqrtResult() {
+            const number = document.getElementById('number').value;
+            const result = Math.sqrt(number);
+            document.getElementById('result').innerText = Result: √${number} = ${result};
+        }
+
+        function exitProgram() {
+            document.getElementById('inputFields').innerHTML = 'Program exited.';
+            document.getElementById('result').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

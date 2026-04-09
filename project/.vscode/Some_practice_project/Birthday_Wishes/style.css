@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url("Flower.jpg");
+    background-size: cover;
+}
+.birthday-inside{
+    background-color: rgb(65, 65, 206) ;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top:300px ;
+    transition: rotate(180deg);
+}
